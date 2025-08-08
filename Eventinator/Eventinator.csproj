@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eventinator.Domain\Eventinator.Domain.csproj" />
-    <ProjectReference Include="..\Eventinator.Infrastucture\Eventinator.Infrastucture.csproj" />
+    <ProjectReference Include="..\Eventinator.Infrastucture\Eventinator.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

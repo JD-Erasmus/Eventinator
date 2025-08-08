@@ -1,8 +1,6 @@
-using System;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Eventinator.Infrastucture.Data.Migrations
+namespace Eventinator.Infrastructure.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

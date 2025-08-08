@@ -12,7 +12,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventinator.Domain", "Event
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventinator.Application", "Eventinator.Application\Eventinator.Application.csproj", "{6FB9A9AA-46FD-4D81-86A6-A290FA3741D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventinator.Infrastucture", "Eventinator.Infrastucture\Eventinator.Infrastucture.csproj", "{C2FA8EE1-2BCA-4E89-888C-C1FB73481A42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventinator.Infrastructure", "Eventinator.Infrastucture\Eventinator.Infrastructure.csproj", "{C2FA8EE1-2BCA-4E89-888C-C1FB73481A42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
