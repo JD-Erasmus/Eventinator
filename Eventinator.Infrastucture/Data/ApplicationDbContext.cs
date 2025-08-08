@@ -18,5 +18,6 @@ namespace Eventinator.Infrastructure.Data
         public DbSet<Plan> Plans { get; set; }
         public DbSet<EventTag> EventTags { get; set; }
         public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+        public DbSet<Location> Locations { get; set; }
     }
 }

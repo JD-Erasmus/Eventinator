@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Eventinator.Models;
+using Eventinator.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Eventinator.Controllers
@@ -15,7 +16,8 @@ namespace Eventinator.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new DiscoverViewModel();
+            return View(model);
         }
 
         public IActionResult Privacy()
