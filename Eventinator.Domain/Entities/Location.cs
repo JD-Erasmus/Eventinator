@@ -1,4 +1,6 @@
-﻿namespace Eventinator.Domain.Entities
+﻿using System.Collections.Generic;
+
+namespace Eventinator.Domain.Entities
 {
     public class Location : BaseEntity
     {
@@ -8,5 +10,6 @@
         public string Country { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public ICollection<Event> Events { get; set; } = new List<Event>();
     }
 }

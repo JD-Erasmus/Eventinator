@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Eventinator.Domain.Entities
 {
@@ -9,5 +10,6 @@ namespace Eventinator.Domain.Entities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public bool IsActive { get; set; }
+        public Plan Plan { get; set; } = null!;
     }
 }

@@ -1,0 +1,6 @@
+@Eventinator.Api_HostAddress = http://localhost:5145
+
+GET {{Eventinator.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

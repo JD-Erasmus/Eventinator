@@ -9,5 +9,6 @@ namespace Eventinator.Domain.Entities
         public string PaymentMethod { get; set; }
         public string Description { get; set; }
         public DateTime PaidAt { get; set; }
+        public ApplicationUser User { get; set; } = null!;
     }
 }

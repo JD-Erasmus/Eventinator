@@ -4,5 +4,7 @@ namespace Eventinator.Domain.Entities
     {
         public int EventId { get; set; }
         public int TagId { get; set; }
+        public Event Event { get; set; } = null!;
+        public Tag Tag { get; set; } = null!;
     }
 }
