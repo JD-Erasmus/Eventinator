@@ -11,4 +11,9 @@
     <Folder Include="Implementation\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Eventinator.Infrastucture\Eventinator.Infrastructure.csproj" />
+    <ProjectReference Include="..\Eventinator.Domain\Eventinator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

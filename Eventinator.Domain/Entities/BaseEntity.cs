@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Eventinator.Domain.Entities
 {
     public abstract class BaseEntity
@@ -10,7 +12,8 @@ namespace Eventinator.Domain.Entities
         /// <summary>When not null, entity is considered soft-deleted.</summary>
         public DateTime? DeletedAt { get; private set; }
         public bool IsDeleted => DeletedAt.HasValue;
-
+        [Timestamp]
+        public byte[] RowVersion { get; set; } = Array.Empty<byte>();
         public void SoftDelete()
         {
             DeletedAt = DateTime.UtcNow;
