@@ -14,6 +14,21 @@ namespace Eventinator.Api.Controllers
             _eventService = eventService;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<EventReadDTO>>> GetAll()
+        {
+            var list = await _eventService.GetAllAsync();
+            return Ok(list);
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<EventReadDTO>> GetById(int id)
+        {
+            var evt = await _eventService.GetByIdAsync(id);
+            if (evt == null) return NotFound();
+            return Ok(evt);
+        }
+
         [HttpPost("CreateEvent")]
         public async Task<IActionResult> Create([FromBody] EventCreateDTO dto)
         {
@@ -23,6 +38,6 @@ namespace Eventinator.Api.Controllers
             return Created($"/api/events/{created.Id}", created);
         }
 
-        // You can add more actions for Get, Update, Delete, etc.
+        // More actions (PUT, DELETE) can be added here.
     }
 }

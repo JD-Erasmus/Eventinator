@@ -2,7 +2,7 @@ namespace Eventinator.Application.DTOs
 {
     public class PaymentReadDTO : BaseAuditDTO
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public decimal Amount { get; set; }
         public string PaymentMethod { get; set; }
         public string Description { get; set; }
@@ -11,7 +11,7 @@ namespace Eventinator.Application.DTOs
 
     public class PaymentUpdateDTO : BaseAuditDTO
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public decimal Amount { get; set; }
         public string PaymentMethod { get; set; }
         public string Description { get; set; }
@@ -24,7 +24,7 @@ namespace Eventinator.Application.DTOs
 
     public class PaymentCreateDTO
     {
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public decimal Amount { get; set; }
         public string PaymentMethod { get; set; }
         public string Description { get; set; }

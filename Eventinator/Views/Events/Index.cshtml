@@ -1,0 +1,33 @@
+@model IEnumerable<EventReadDTO>
+@{
+    ViewData["Title"] = "Events";
+}
+<h1 class="mb-3">Events</h1>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create Event</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Capacity</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var e in Model)
+    {
+        <tr>
+            <td>@e.Title</td>
+            <td>@e.StartTime:g</td>
+            <td>@e.EndTime:g</td>
+            <td>@e.Capacity</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@e.Id" class="btn btn-sm btn-outline-secondary">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -7,7 +7,7 @@ namespace Eventinator.Application.DTOs
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public int Capacity { get; set; }
-        public int OrganizerId { get; set; }
+        public string OrganizerId { get; set; }
         public int LocationId { get; set; }
     }
 
@@ -18,7 +18,7 @@ namespace Eventinator.Application.DTOs
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public int Capacity { get; set; }
-        public int OrganizerId { get; set; }
+        public string OrganizerId { get; set; }
         public int LocationId { get; set; }
         public LocationReadDTO Location { get; set; }
     }
@@ -30,7 +30,7 @@ namespace Eventinator.Application.DTOs
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public int Capacity { get; set; }
-        public int OrganizerId { get; set; }
+        public string OrganizerId { get; set; }
         public int LocationId { get; set; }
     }
 

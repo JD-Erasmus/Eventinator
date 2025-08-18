@@ -11,16 +11,13 @@ namespace Eventinator.Domain.Entities
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public int Capacity { get; set; }
-        public int OrganizerId { get; set; }
-
-        // Navigation property for Location
+        // Organizer (AspNetUsers string key)
+        public string OrganizerId { get; set; }
+        public ApplicationUser Organizer { get; set; }
+        // Location
         public int LocationId { get; set; }
         public Location Location { get; set; }
-
-        // Navigation property for attendees
         public ICollection<EventAttendee> Attendees { get; set; } = new List<EventAttendee>();
-
-        // Navigation property for tags
         public ICollection<EventTag> EventTags { get; set; } = new List<EventTag>();
     }
 }

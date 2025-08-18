@@ -1,4 +1,4 @@
-namespace Eventinator.Domain.Entities
+namespace Eventinator.Domain.Enums
 {
     public enum TicketType
     {

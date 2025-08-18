@@ -19,7 +19,7 @@ namespace Eventinator.Tests.Implementations
                 StartTime = DateTime.UtcNow,
                 EndTime = DateTime.UtcNow.AddHours(2),
                 Capacity = 100,
-                OrganizerId = 1,
+                OrganizerId = "user-1",
                 LocationId = 1
             };
             context.Events.Add(evt);
@@ -38,7 +38,7 @@ namespace Eventinator.Tests.Implementations
                 StartTime = DateTime.UtcNow,
                 EndTime = DateTime.UtcNow.AddHours(2),
                 Capacity = 50,
-                OrganizerId = 2,
+                OrganizerId = "user-2",
                 LocationId = 2
             };
             context.Events.Add(evt);
@@ -59,7 +59,7 @@ namespace Eventinator.Tests.Implementations
                 StartTime = DateTime.UtcNow,
                 EndTime = DateTime.UtcNow.AddHours(2),
                 Capacity = 75,
-                OrganizerId = 3,
+                OrganizerId = "user-3",
                 LocationId = 3
             };
             context.Events.Add(evt);
@@ -82,7 +82,7 @@ namespace Eventinator.Tests.Implementations
                 StartTime = DateTime.UtcNow,
                 EndTime = DateTime.UtcNow.AddHours(2),
                 Capacity = 30,
-                OrganizerId = 4,
+                OrganizerId = "user-4",
                 LocationId = 4
             };
             context.Events.Add(evt);

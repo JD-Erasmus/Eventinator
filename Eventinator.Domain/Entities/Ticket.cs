@@ -1,3 +1,4 @@
+using Eventinator.Domain.Enums;
 using System;
 
 namespace Eventinator.Domain.Entities
@@ -6,7 +7,7 @@ namespace Eventinator.Domain.Entities
     {
         public int EventId { get; set; }
         public Event Event { get; set; } = null!;
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public ApplicationUser User { get; set; } = null!;
         public decimal Price { get; set; }
         public DateTime PurchaseDate { get; set; }
